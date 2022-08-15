@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#impactReport {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+
+    padding: 18px 0;
+}
+
+.pOne {
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.pOne:hover {
+    text-decoration-thickness: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
+}
+
+#logoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+#logoIcon img {
+    width: 120px;
+}
+
+#models,
+#menus {
+    display: flex;
+}
+
+.modelsLinks {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+
+    padding: 5px 15px;
+}
+
+.modelsLinks:hover {
+    border-radius: 20px;
+
+    background-color: #bac2c2;
+    transition: .5s;
+}
+
+main {
+    width: 100%;
+    min-height: 100%;
+
+    background-image: url(/Assets/img/M3-Homepage-Desktop-LHD.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header1 h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#paragrafos {
+    display: flex;
+    flex-direction: row;
+}
+
+#buttons {
+    margin-top: 370px;
+    display: flex;
+    flex-direction: row;
+}
+
+#btnOne {
+    padding: 10px 75px;
+    border-radius: 25px;
+    border: 2px solid #403c44;
+    background-color: #403c44;
+    cursor: pointer;
+
+    margin-right: 20px;
+
+    color: #fff;
+    font-weight: bold;
+}
+
+#btnTwo {
+    padding: 10px 75px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+
+    font-weight: 500;
+}
+
+#arrow {
+    margin-top: 50px;
+
+    border: solid #403c44;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+
+    transform: rotate(45deg);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #403c44;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* responsividade */
+
+@media screen and (max-width:1200px) {
+    #models{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #buttons {
+        flex-direction: column;
+    }
+
+    #btnTwo {
+        margin-top: 10px;
+        margin-right: 20px;
+        padding: 10px 150px;
+    }
+}
